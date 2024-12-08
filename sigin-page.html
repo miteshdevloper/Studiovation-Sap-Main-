@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="acccesing.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h3>Studiovation</h3>
+        </div>
+        <ul class="top-list">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about-us2.html">About Us</a></li>
+            <li><a href="sigin-page.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <!-- Page 1 with Background Image -->
+
+
+    <!-- Success message -->
+    <div class="succes">
+        <p>Registration was successful you may proceed to login <i class="fa-solid fa-circle-check"></i></p>
+    </div>
+
+    <!-- Login and Register Forms -->
+    <main>
+        <div class="form-container" id="form-container">
+            <div class="login-form">
+                <!-- Login Form -->
+                <form class="login" action="">
+                    <h1>Login</h1>
+                    <div class="username">
+                        <label for="login-username">Username:</label>
+                        <input placeholder="Username" id="login-username" name="Username" type="text">
+                    </div>
+                    <div class="password">
+                        <label for="login-password">Password:</label>
+                        <input id="login-password" name="password" placeholder="Password" type="password">
+                    </div>
+                    <a href="#">Forgot your password?</a>
+                    <button class="btns" type="submit">Login</button>
+                </form>
+
+                <!-- Register Form -->
+                <form id="register" action="https://script.google.com/macros/s/AKfycbxbtrnh45hYvv7Gbrr5sjf0fR3ZvBaVcwRICOX1KQpYMcc8hAy-z7gEmKPojjLUKIA7/exec" method="post" class="register">
+                    <h1>Register</h1>
+                    <div class="email">
+                        <label for="register-email">Email:</label>
+                        <input id="register-email" name="email" placeholder="Email" type="email">
+                    </div>
+                    <div class="username">
+                        <label for="register-username">Username:</label>
+                        <input id="register-username" name="username" placeholder="Username" type="text">
+                    </div>
+                    <div class="password">
+                        <label for="register-password">Create Password:</label>
+                        <input id="register-password" type="password" name="password" placeholder="Password">
+                    </div>
+                    <button class="btns" type="submit">Register</button>
+                </form>
+            </div>
+
+            <!-- Toggle button to switch between login and register forms -->
+            <div class="toggle">
+                <button ondblclick="toggleForms()" class="toggle-button">Register</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/js.js"></script>
+</body>
+</html>

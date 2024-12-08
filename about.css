@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, main, body {
+    width: 100vw;
+    height: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100vw;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+}
+
+.top-list {
+    width: 50vw;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top-list li {
+    margin-left: 100px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    gap: 10px;
+}
+
+.logo h3 {
+    font-size: 40px;
+    font-family: "Edu AU VIC WA ", cursive;
+    z-index: 3;
+}
+
+#Page1 {
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    background-image: url('assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#Page1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+}
+
+.left {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    padding: 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.left h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adding shadow to the text */
+}
+
+.left p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding shadow to paragraph text */
+}
+
+.right {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.founders-image {
+    width: 80%;
+    border-radius: 15px;
+    z-index: 10;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+    #Page1 {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
+
+h3{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+.swara, .Anahita, .paridhi {
+    background-color: rgba(0, 0, 0, 0.0001); /* Semi-transparent background */
+    margin-top: 53px;
+    height: 50vh;
+    width: 14vw;
+    position: absolute;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align text at the top */
+    padding-top: 10px; /* Add some padding to the top */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.swara {
+    margin-right: 350px;
+}
+
+.Anahita {
+    margin-left: 80px;
+}
+
+.paridhi {
+    margin-left: 441px;
+}
+
+/* Hover effect to show text on the div */
+.swara:hover::after {
+    content: "Swara";
+    color: #1E90FF; /* Blue color representing calm/cool personality */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40vh;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.Anahita:hover::after {
+    content: "Anahita";
+    color: #FF69B4; /* Pink color representing peace */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40vh;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.paridhi:hover::after {
+    content: "Paridhi";
+    color: #FF6347; /* Light red color representing anger */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40vh;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, main, body {
+    width: 100vw;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    width: 100vw;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+}
+
+.top-list {
+    width: 50vw;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 3;
+}
+
+.top-list li {
+    margin-left: 100px;
+    z-index: 3;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    gap: 10px;
+}
+
+ul {
+    margin-left: 190px;
+}
+
+.logo h3 {
+    font-size: 40px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    z-index: 3;
+}
